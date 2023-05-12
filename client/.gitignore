@@ -11,6 +11,10 @@
 # production
 /build
 
+# API routes and controllers
+server/routes
+server/controllers
+
 # misc
 .DS_Store
 .env.local
