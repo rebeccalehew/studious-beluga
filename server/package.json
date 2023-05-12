@@ -1,7 +1,7 @@
 {
-  "name": "server",
+  "name": "book-search-engine",
   "version": "1.0.0",
-  "description": "",
+  "description": "This app takes a fully functioning Google Books API search engine built with a RESTful API, and refactors it to be a GraphQL API built with Apollo Server.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -11,12 +11,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "apollo-server-express": "^3.6.2",
     "bcrypt": "^4.0.1",
     "express": "^4.17.1",
+    "graphql": "^16.3.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^7.0.2"
   },
   "devDependencies": {
+    "concurrently": "^5.3.0",
     "nodemon": "^2.0.3"
   }
 }
