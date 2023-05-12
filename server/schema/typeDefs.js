@@ -2,33 +2,32 @@ const { gql } = require('apollo-server-express');
 
 const typeDefs = gql`
     type Book {
-        _id: ID,
-        authors: [authors] String!,
-        description: String!,
-        bookId: String!,
-        title: String!,
-        image: String,
-        link: String,
+        _id: ID
+        bookId: String
+        authors: [String]
+        description: String
+        title: String!
+        image: String
+        link: String
     }
 
     type Users {
-        username: String!,
-        email: String!,
-        password: String!,
-        bookCount: Int,
-        savedBooks: [Books!]
+        _id: ID
+        username: String
+        email: String
+        password: String
+        bookCount: Int
+        savedBooks: [Book]
     }
 
     # Query that will always find and return the logged in user's data
     type Query {
-        user: [User]!
-        profile(userId: ID!): User
-        me: User
+        me(userId: ID!): User
     }
 
     # JWT authentication
     type Auth {
-        token: String!
+        token: ID!
         user: User!
     }
 
@@ -41,10 +40,10 @@ const typeDefs = gql`
         loginUser(email: String!, password: String!): Auth
         
         # Sets the data structure for removing a saved book from the user's profile
-        removeBook(bookId: String!): User
+        removeBook(userId: ID!, bookId: String!): User
         
         # Sets the data structure for saving a book to the user's profile
-        saveBook(authors: [String!]!, description: String!, title: String!, bookId: String!, image: String, link: String): Book
+        saveBook(userId: ID!, authors: [String!]!, description: String!, title: String!, bookId: String!, image: String, link: String): User
     }
 `;
 
