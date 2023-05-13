@@ -1,7 +1,7 @@
 {
   "name": "googlebooks-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "This app takes a fully functioning Google Books API search engine built with a RESTful API, and refactors it to be a GraphQL API built with Apollo Server.",
   "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",
@@ -12,7 +12,14 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+
   "devDependencies": {
-    "concurrently": "^5.1.0"
+    "concurrently": "^5.1.0",
+    "nodemon": "^2.0.9"
+  },
+  
+  "dependencies": {
+    "apollo-server-express": "^2.15.0",
+    "mongodb": "^5.5.0"
   }
 }

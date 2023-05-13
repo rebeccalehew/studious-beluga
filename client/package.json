@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:3001",
+  
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -12,9 +13,12 @@
     "react": "^16.13.1",
     "react-bootstrap": "^2.7.0",
     "react-dom": "^16.13.1",
-    "react-router-dom": "^6.2.1",
-    "react-scripts": "^5.0.1"
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^5.0.1",
+    "@apollo/client": "^3.5.8",
+    "apollo-server-express": "^2.15.0"
   },
+
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
