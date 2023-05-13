@@ -20,12 +20,15 @@ This app takes a fully functioning Google Books API search engine built with a R
 
 ## Usage:
 ```md
+User Story:
 AS AN avid reader
 I WANT to search for new books to read
 SO THAT I can keep a list of books to purchase
 ```
 
 ## Challenges:
+![Screenshot](./client/src/img/errors.png)
+Currently I am unable to deploy my app to Heroku. I may be having issues connecting to Mongo Atlas, and I know there are issues in my code preventing it from deploying to Heroku using my CLI. This is something I will continue to debug in the future, but for time purposes, I am turning in the project as is.
 
 ## Contributions:
 This app was created in conjuction with the coding boot camp program at the University of Kansas. Please contact me, Rebecca, directly for guidelines.
