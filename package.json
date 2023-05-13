@@ -1,6 +1,9 @@
 {
   "name": "googlebooks-app",
   "version": "1.0.0",
+  "engines": {
+    "node": "16.x"
+  },
   "description": "This app takes a fully functioning Google Books API search engine built with a RESTful API, and refactors it to be a GraphQL API built with Apollo Server.",
   "main": "server/server.js",
   "scripts": {
