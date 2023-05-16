@@ -18,8 +18,7 @@
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
     "react-scripts": "^5.0.1",
-    "@apollo/client": "^3.5.8",
-    "apollo-server-express": "^2.15.0"
+    "@apollo/client": "^3.5.8"
   },
 
   "scripts": {

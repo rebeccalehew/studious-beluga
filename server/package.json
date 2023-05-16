@@ -19,8 +19,7 @@
     "express": "^4.17.1",
     "graphql": "^15.5.0",
     "jsonwebtoken": "^9.0.0",
-    "mongoose": "^7.0.2",
-    "@apollo/client": "^3.5.8",
+    "mongoose": "^7.0.2",   
     "apollo-server-express": "^2.15.0",
     "mongodb": "^5.5.0"
   },
