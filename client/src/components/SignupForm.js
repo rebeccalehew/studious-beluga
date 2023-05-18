@@ -25,7 +25,6 @@ const SignupForm = () => {
     // check if form has everything (as per react-bootstrap docs)
     const form = event.currentTarget;
     if (form.checkValidity() === false) {
-      event.preventDefault();
       event.stopPropagation();
     }
 
@@ -37,7 +36,6 @@ const SignupForm = () => {
       });
       
       Auth.login(data.addUser.token);
-
     } catch (err) {
       console.error(err);
       setShowAlert(true);
