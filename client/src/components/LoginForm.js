@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import { Form, Button, Alert } from 'react-bootstrap';
 import { useMutation } from "@apollo/client"
-
 import { LOGIN_USER } from '../utils/mutations';
 import Auth from '../utils/auth';
 
@@ -28,14 +27,14 @@ const LoginForm = () => {
       event.stopPropagation();
     }
 
+    setValidated(true);
+
     try {
       const { data } = await loginUser({
         variables: { ...userFormData }
       });
 
-      const { token, user } = data.loginUser;
-      console.log(user);
-      Auth.loginUser(token);
+      Auth.loginUser(data.loginUser.token);
       
     } catch (err) {
       console.error(err);
